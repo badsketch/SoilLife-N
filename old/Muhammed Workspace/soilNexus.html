@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+			<link rel="stylesheet" type="text/css" href="fullpage.js/dist/jquery.fullPage.css" />
+
+			<link rel="stylesheet" type="text/css" href="soils101.css" />
+			<link rel="stylesheet" type="text/css" href="tempsoil.css"/>
+
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+			<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+			<script src="fullpage.js/vendors/jquery.easings.min.js"></script>
+
+
+			<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+			<script type="text/javascript" src="fullpage.js/vendors/scrolloverflow.min.js"></script>
+
+
+			<script type="text/javascript" src="fullpage.js/dist/jquery.fullPageSixF.js"></script>
+	</head>
+	<body>
+			<div id="fullpage">
+				<center>
+					<div class="section" id="genesisPage">
+						<!-- begin navigation bar -->
+												<div class="navbar">
+
+													<div class="iconDropdown">
+														<a href="index.html#splashAnchor"><img id="logo" src="../logo.jpg"></a>
+													</div>
+
+														<div class="soilsDropdown">
+															<a href="index.html#soils101Anchor" id="navItems">soils 101</a>
+															<div class="soils101Content">
+																<a href="soilGenesis.html">soilGenesis</a>
+																<a href="soilHabitat.html">soilHabitat</a>
+																<a href="soilBiology.html">soilBiology</a>
+																<a href="soilChemistry.html">soilChemistry</a>
+																<a href="soilNutrition.html">soilNutrition</a>
+																<a href="soilHealth.html">soilHealth</a>
+															</div>
+														</div>
+
+														<div class="wosDropdown">
+															<a href="#" id="navItems">web of soil</a>
+															<div class="wosContent">
+																<a href="food.html">food</a>
+																<a href="fiber.html">fiber</a>
+																<a href="filter.html">filter</a>
+																<a href="foundation.html">foundations</a>
+																<a href="farmaceuticals.html">farmaceuticals</a>
+																<a href="fun.html">fun</a>
+															</div>
+														</div>
+
+														<div class="mediaDropdown">
+															<a href="#mediaAnchor" id="navItems">media</a>
+														</div>
+
+														<div class="involvedDropdown">
+															<a href="#involvedAnchor" id="navItems">get involved</a>
+															<div class="involvedContent">
+																	<a href="atHome.html">atHome</a>
+																	<a href="inCommunity.html">inCommunity</a>
+																	<a href="legislation.html">legislation</a>
+																	<a href="socialMedia.html">socialMedia</a>
+																	<a href="education.html">education</a>
+																	<a href="donations.html">donations</a>
+															</div>
+														</div>
+
+														<div class="aboutDropdown">
+															<a href="#aboutAnchor" id="navItems">about us</a>
+															<div class="aboutContent">
+																	<a href="ourStory.html">ourStory</a>
+																	<a href="ourMission.html">ourMission</a>
+																	<a href="ourVision.html">ourVision</a>
+																	<a href="ourValues.html">ourValues</a>
+																	<a href="ourTeam.html">ourTeam</a>
+																	<a href="ourContact.html">ourContact</a>
+
+															</div>
+														</div>
+
+													<div id="socialMediaLinks">
+														<a href="https://www.facebook.com/TheSoilLife/"><img id="facebookLogo" src="facebook.svg"></a>
+														<a href="https://www.instagram.com/soil.life"><img id="instagramLogo" src="instagram.svg"></a>
+														<a href="https://twitter.com/the_Soil_Life"><img id="twitterLogo" src="twitter.svg"></a>
+													</div>
+												</div>
+						<!-- end navigation bar -->
+						<div class="soils101Nav" style="background: #ee6a7c">
+							<a href="food.html"><img src="subnav/6Fs/food_gray.svg" id="subNavIconMain"></a>
+							<a href="fiber.html"><img src="subnav/6Fs/fiber_white.svg" id="subNavIcon"></a>
+							<a href="filter.html"><img src="subnav/6Fs/filter_white.svg" id="subNavIcon"></a>
+							<a href="foundation.html"><img src="subnav/6Fs/foundations_white.svg" id="subNavIcon"></a>
+							<a href="farmaceuticals.html"><img src="subnav/6Fs/farmaceuticals_white.svg" id="subNavIcon"></a>
+							<a href="fun.html"><img src="subnav/6Fs/fun_white.svg" id="subNavIcon"></a>
+						</div>
+					</div>
+
+					<div class="section" id="video">
+						<!--<div class="sixFsNav" style="background: #ee6a7c">
+								<a href="food.html"><img src="subnav/6Fs/food_gray.svg" id="subNavIconMain"></a>
+								<a href="fiber.html#fiberVideo"><img src="subnav/6Fs/fiber_white.svg" id="subNavIcon"></a>
+								<a href="filter.html#filterVideo"><img src="subnav/6Fs/filter_white.svg" id="subNavIcon"></a>
+								<a href="foundation.html#foundationVideo"><img src="subnav/6Fs/foundations_white.svg" id="subNavIcon"></a>
+								<a href="farmaceuticals.html#farmaceuticalsVideo"><img src="subnav/6Fs/farmaceuticals_white.svg" id="subNavIcon"></a>
+								<a href="fun.html#funVideo"><img src="subnav/6Fs/fun_white.svg" id="subNavIcon"></a>
+						</div>-->
+						<iframe title="YouTube video player" class="youtube-player" type="text/html"
+						src="https://www.youtube.com/embed/kybPmB1zBUw"
+						frameborder="0" allowFullScreen>
+						</iframe>
+					</div>
+
+					<div class="section">
+						Placeholder#1
+					</div>
+
+					<div class="section">
+						Placeholder#2
+					</div>
+				</center>
+			</div>
+
+			<script>
+				$(document).ready(function() {
+					$('#fullpage').fullpage();
+				});
+			</script>
+	</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Footer</title>
+
+    <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="examples.css" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        padding: 10px;
+    }
+    .left {
+      width: 70%;
+      float: left;
+      height: 300px;
+      padding-right: 10%;
+      text-align: left;
+      padding-left: 7%;
+      padding-top: 2.5%;
+      padding-bottom: 0%;
+      line-height: 1.7;
+    }
+    .right {
+      width: 30%;
+      padding-top: 4%;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .stayconnected {
+      background-color: #EC6A7C;
+      width: 100%;
+      height: 60px;
+      text-align: left;
+      padding-left: 3%;
+      padding-top: 3%;
+    }
+    .socialmedia {
+      padding: 20px;
+      margin: 5px 2px;
+      width: 3em;
+      height: 3em;
+    }
+
+
+
+
+
+    h1,h2,h3,h4,h5,h6 {
+        font-weight: normal;
+        font-size: 100%;
+        margin:0;
+        padding:0;
+        color:#444;
+    }
+
+
+    body{
+    	font-family: arial,helvetica;
+    	color: #333;
+    	color: rgba(0,0,0,0.5);
+    }
+    h1{
+    	font-size: 6em;
+    }
+    p{
+    	font-size: 2em;
+    }
+    .intro p{
+    	width: 50%;
+    	margin: 0 auto;
+    	font-size: 1.5em;
+    }
+    .section{
+    	text-align:center;
+    }
+
+
+
+
+
+
+
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+
+<body>
+
+<div id="fullpage">
+    <div class="section" id="section0">
+        <div class="intro">
+          <h1>Placeholder Section</h1>
+          <p>Scroll for footer</p>
+        </div>
+    </div>
+
+
+
+    <div class="section fp-auto-height" id="section1">
+      <div class="column left" style="background-color:#ffffff;">
+          <p style="color:#3CABA2;">soil life is a non-profit based out of uc davis and supported<br>
+          by the soils and biogeochemistry graduate group.<br>
+          <b>we are on a mission to change the way the world looks at soil.</b></p>
+      </div>
+
+        <div class ="column right">
+          <div class="stayconnected"
+            <p style="color:#ffffff; font-size: 25px;"><b>stay connected.</b></p>
+          </div>
+
+          <div id="socialmedia">
+            <a href="https://www.instagram.com/soil.life"><img id="instagramLogo" src="instagram.svg"></a>
+            <a href="https://www.facebook.com/TheSoilLife/"><img id="facebookLogo" src="facebook.svg"></a>
+            <a href="https://twitter.com/the_Soil_Life"><img id="twitterLogo" src="twitter.svg"></a>
+            <!-- <a href="https://www.youtube.com/TheSoilLife/"><img id="facebookLogo" src="facebook.svg"></a> -->
+          </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script type="text/javascript" src="../dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+      verticalCentered: true,
+      anchors: ['anchor1', 'anchor2'],
+      sectionsColor: ['#1bbc9b', '#ffffff']
+  });
+</script>
+</body>
+</html>

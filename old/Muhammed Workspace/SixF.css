@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'acremedium';
+    src: url("Acre-Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  font-family:acremedium;
+  letter-spacing: 1px;
+  
+}
+
+.section{
+    background-size: cover;
+}
+
+.section iframe {
+    position:relative;
+    width:80%;
+    height:80%;
+    z-index: -1;
+}
+
+.sixFsNav {
+    height:33px;
+    position: absolute; /*fixed to move with user, absolute to stay at top*/
+    width:100%;
+    top: 57px;
+    padding-top: 15px; /* padding for items */ 
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.sixFsNav a{
+    top:-35px;
+    color: #5B5052;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+/*.sixFsNav .active{
+    top:-35px;
+    font-weight: 100;
+    text-decoration: underline;
+    color: black;
+}*/
+#subNavIconMain{
+    position: absolute;
+    top: 1px;
+    height:47px;
+    width:47px;
+    z-index: 1;
+}
+#subNavIcon{
+    position: absolute;
+    top: 6px;
+    height:30px;
+    width:30px;
+    z-index: 1;
+}
+
+/*.navbar a {
+    color: black;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    left: 5%;
+    /*display: inline;  TAKE OUT IF NECESSARY  inline or inline-block*/
+
+
+#funPage{
+    background-image: url("sixFs/fun.jpg");
+}
+
+#funPic{
+    position: absolute;
+    right: 210px;
+    bottom: 20px;
+}
+
+#funText{
+    font-size: 36px;
+    position: absolute;
+    right: 170px;
+    bottom: 310px;
+    color: #5B5052;
+}
+
+#fiberPage{
+    background-image: url("sixFs/fiber.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#fiberPic{
+    position: absolute;
+    left: 40px;
+    top: 100px;
+}
+
+#fiberText{
+    font-size: 36px;
+    position: absolute;
+    left: 350px;
+    top: 230px;
+    text-align: left;
+    color: #5B5052;
+}
+
+#foodPage{
+    background-image: url("sixFs/food.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#foodPic{
+    position: absolute;
+    left: 350px;
+    top: 200px;
+    width: 250px;
+    height:250px;
+}
+
+#foodText{
+    font-size: 32px;
+    position: absolute;
+    left: 560px;
+    top: 230px;
+    text-align: left;
+    color: #5B5052;
+}
+
+#foundationPage{
+    background-image: url("sixFs/foundation.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#foundationPic{
+    position: absolute;
+    left: 630px;
+    top: 180px;
+    width: 300px;
+    height:300px;
+}
+
+#foundationText{
+    font-size: 32px;
+    position: absolute;
+    left: 97px;
+    top: 210px;
+    text-align: right;
+    color: white;
+}
+
+#farmaceuticalsPage{
+    background-image: url("sixFs/farmaceuticals.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#farmaceuticalsPic{
+    position: absolute;
+    left: 50px;
+    top: 85px;
+    width: 300px;
+    height:300px;
+}
+
+#farmaceuticalsText{
+    font-size: 32px;
+    position: absolute;
+    left: 37px;
+    top: 330px;
+    text-align: left;
+    color: #5B5052;
+}
+
+#filterPage{
+    background-image: url("sixFs/filter.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#filterPic{
+    position: absolute;
+    left: 480px;
+    top: 145px;
+    width: 300px;
+    height:300px;
+}
+
+#filterText{
+    font-size: 32px;
+    position: absolute;
+    left: 218px;
+    top: 400px;
+    text-align: center;
+    color: #5B5052;
+}
+
+#sixFsVideo{
+    top: 8%;
+}
+
+#foodWOS{
+    background-image: url("sixFs/wosfood.png");
+    background-size: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#fiberWOS{
+    background-image: url("sixFs/wosfiber.png");
+    background-size: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#filterWOS{
+    background-image: url("sixFs/wosfilter.png");
+    background-size: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#farmWOS{
+    background-image: url("sixFs/wosfarm.png");
+    background-size: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#foundWOS{
+    background-image: url("sixFs/wosfound.png");
+    background-size: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#funWOS{
+    background-image: url("sixFs/wosfun.png");
+    background-size: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.arrow{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    right:-550px;
+    top: 0%;
+    z-index: 1;
+}

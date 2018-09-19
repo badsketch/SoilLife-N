@@ -1,0 +1,572 @@
+@font-face {
+    font-family: 'acremedium';
+    src: url("Acre-Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  font-family:acremedium;
+  letter-spacing: 1px;
+}
+
+.section{
+    text-align:center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.section iframe {
+    position:relative;
+    width:80%;
+    height:80%;
+}
+
+
+.slide{
+    text-align:center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.jumbotron{
+    text-align: left;
+}
+
+.jumboText{
+    /*font-size: 40px;
+    color: white;*/
+    padding-left: 14%;
+    font-size: 9.5vh;
+    color: white;
+    position: absolute;
+    top: 45vh;
+    left: 0;
+    line-height: 10vh;
+    font-weight: 100;
+}
+
+.jumboTear{
+    margin-left: 14%;
+    padding-left: 1%;
+    padding-right: 0%;
+    color: white;
+    position: absolute;
+    top: 70vh;
+    left: 0;
+    width: 60%;
+    font-size: 5vh;
+    background: #ee6a7c;
+    padding: .8%;
+    font-weight: 100;
+}
+
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    height:50px;
+    position: fixed;
+    width:100%;
+    top: 0;
+    padding-top: 14px 16px; /* padding for items */
+    z-index: 3;
+}
+
+.navbar a {
+    color: #5D5152;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 16px;
+    left: 5%;
+    /*display: inline;  TAKE OUT IF NECESSARY  inline or inline-block*/
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+    text-decoration-color:#ee6a7c;
+}
+
+.navbar a:active{
+    text-decoration: underline;
+    text-decoration-color:#ee6a7c;
+}
+
+#logo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height:50px;
+    z-index: 1;
+}
+
+#navItems{
+    /*position: relative;*/
+    /*padding-left: 20%;*/
+    left: -2500px;
+    /*padding-top:0px;*/
+    padding: 30px 30px;
+    top: 100px;
+    /*padding: 15px;*/
+}
+
+#socialMediaLinks{
+    float: right;
+    color: #5D5152;
+    padding-top: .5%;
+}
+
+#facebookLogo, #instagramLogo, #twitterLogo{
+    height:30px;
+}
+
+/*soil circle, Fs, media, 101, involved, about, foot*/
+
+
+.iconDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 0%;
+    padding-top: 15px; /* padding for items */
+}
+
+
+.soilsDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 11%;
+    padding-top: 15px; /* padding for items */
+}
+
+.wosDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 25%;
+    padding-top: 15px; /* padding for items */
+}
+
+.mediaDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 42%;
+    padding-top: 15px; /* padding for items */
+}
+
+.involvedDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 57%;
+    padding-top: 15px; /* padding for items */
+}
+
+.aboutDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 74%;
+    padding-top: 15px; /* padding for items */
+}
+
+.soilsDropdown:hover .soils101Content {
+    display: block;
+}
+
+.involvedDropdown:hover .involvedContent {
+    display: block;
+}
+
+.aboutDropdown:hover .aboutContent {
+    display: block;
+}
+
+.wosDropdown:hover .wosContent {
+    display: block;
+    /*position: relative;
+    left: -245px;*/
+}
+
+.soils101Content, .involvedContent, .aboutContent, .wosContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.soils101Content a, .involvedContent a, .aboutContent a , .wosContent a{
+    float: none;  /*float right changes this to horizontal*/
+    color: #5D5152;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.soils101Content a:hover, .involvedContent a:hover, .aboutContent a:hover, .wosContent a:hover {
+    background-color: #ddd;
+}
+
+#soils101{
+    background-image: url("soil101.jpg");
+}
+
+
+
+html, body{
+    margin:0;
+    padding:0;
+}
+
+.logo{
+    float: left
+}
+
+#splashPage{
+    background-image: url("../imgs/photos/headerPhoto1.jpg");
+}
+
+#soilCirclePage{
+    /*background-image: url("../imgs/photos/wheel/soilWheel.jpg");*/
+    /*padding: 6% 0 0 0;*/
+}
+
+#soilCircleVideo{
+    position: relative;
+    bottom: 50px;
+    z-index: 1;
+}
+
+#downArrow{
+    background-color: #ee6a7c;
+    position: relative;
+    height: 30px;
+    right: -585px;
+    bottom: -320px;
+    z-index: 2;
+}
+
+#soilPicture{
+    width: 60%;
+    height: 100%;
+   /* display:block;
+    position: absolute;*/
+    float: right;
+    right: 0px;
+    bottom: 0px;
+}
+
+#sixFsButton {
+    color: #32A894;
+    font-family: acremedium;
+    font-size: 4.5vh;
+    background-color: white;
+    border-style: none;
+    border-width: none;
+    border-color: none;
+    margin-top:3vh;
+  }
+
+#food{
+    background-image: url("../imgs/photos/fScroll/6Fs-Scroll-Food.jpg");
+    padding: 6% 0 0 0;
+}
+
+#fiber{
+    background-image: url("../imgs/photos/fScroll/6Fs-Scroll-Fiber.jpg");
+    padding: 6% 0 0 0;
+}
+
+#filter{
+    background-image: url("../imgs/photos/fScroll/6Fs-Scroll-Filter.jpg");
+    padding: 6% 0 0 0;
+}
+
+#foundation{
+    background-image: url("../imgs/photos/fScroll/6Fs-Scroll-Foundation.jpg");
+    padding: 6% 0 0 0;
+}
+
+#farmaceuticals{
+    background-image: url("../imgs/photos/fScroll/6Fs-Scroll-Farmaceuticals.jpg");
+    padding: 6% 0 0 0;
+}
+
+#fun{
+    background-image: url("../imgs/photos/fScroll/6Fs-Scroll-Fun.jpg");
+    padding: 6% 0 0 0;
+}
+
+#soilMattersText1{
+    position: absolute;
+    left: 180px;
+    font-size: 48px;
+    color: white;
+
+}
+
+#soilMattersText2{
+    position: absolute;
+    right: 250px;
+    bottom: 40px;
+    font-size: 55px;
+    font-weight: 900;
+    color: white;
+}
+
+#soilSpheres{
+    background-image: url("../imgs/photos/dig/soilSpheres.jpg");
+    /*width: 100%;
+    height: 100%;*/
+    background-size: cover;
+    height: 100%;
+    top: 0px;
+
+}
+
+#soilFormingFactors{
+    background-image: url("../imgs/photos/dig/soilFormingFactors.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+#soilEnvironment{
+    background-image: url("../imgs/photos/dig/soilEnvironment.jpg");
+    background-size: cover;
+}
+
+#soilBiology{
+    background-image: url("../imgs/photos/dig/soilBiology.jpg");
+    background-size: cover;
+}
+
+#soilChemistry{
+    background-image: url("../imgs/photos/dig/soilChemistry.jpg");
+    background-size: cover;
+}
+
+#soilOrders{
+    background-image: url("../imgs/photos/dig/soilComplexity.jpg");
+    background-size: cover;
+}
+
+#soilHealth{
+    background-image: url("../imgs/photos/dig/soilHealthDifferent.jpg");
+    background-size: cover;
+}
+
+#soilRisk{
+    background-image: url("../imgs/photos/dig/soilRisk.jpg");
+    background-size: cover;
+}
+
+#involvedPage{
+    background-image: url("getInvolved/getInvolved.jpg");
+    display: inline-block;
+}
+
+#involvedPageText1{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom:50px;
+    left: 0px;
+    font-size: 25px;
+    line-height: 200%;
+    font-weight: 900;
+}
+
+#involvedPageText2{
+    text-align: center;
+    padding-bottom:200px;
+    left: 0px;
+    font-size: 25px;
+    line-height: 200%;
+    font-weight: 100;
+}
+
+#atHome{
+    background-image: url("../imgs/photos/getInvolved/getInvolved-atHome.jpg");
+    padding: 6% 0 0 0;
+}
+
+#inCommunity{
+    background-image: url("../imgs/photos/getInvolved/getInvolved-inCommunity.jpg");
+    padding: 6% 0 0 0;
+}
+
+#legislation{
+    background-image: url("../imgs/photos/getInvolved/getInvolved-legislation.jpg");
+    padding: 6% 0 0 0;
+}
+
+#socialMedia{
+    background-image: url("../imgs/photos/getInvolved/getInvolved-socialMedia.jpg");
+    padding: 6% 0 0 0;
+}
+
+#education{
+    background-image: url("../imgs/photos/getInvolved/getInvolved-education.jpg");
+    padding: 6% 0 0 0;
+}
+
+#donations{
+    background-image: url("../imgs/photos/getInvolved/getInvolved-donations.jpg");
+    padding: 6% 0 0 0;
+}
+
+#aboutPage{
+    background-image: url("about/About Us.jpg");
+    display: inline-block;
+}
+
+.transbox{
+    /*top: 0px;
+    left:80px;
+    right: 19%;*/
+    margin: 160px;
+    padding-right: 130px;
+    /*left: 100px;
+    padding-right: 50%;
+    position: absolute;*/
+    /*margin-left: 35px;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-top: 0px;*/
+    background-color: #ffffff;
+    /*border: 1px solid black;*/
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    height: 100%;
+    width: 100%;
+
+  }
+
+.transbox2{
+    /*margin-left: 305px;
+    margin-top: 0px;*/
+    top: 0px;
+    left: 80px;
+    background-color: #ffffff;
+    /*border: 1px solid black;*/
+    position: absolute;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    height: 100%;
+    width: 50%;
+    /*font-size: 10px;*/
+}
+
+#aboutPageText1{
+    position: absolute;
+    text-align: center;
+    left: 165px;
+    top:30px;
+    /*margin-left: 0px;
+    padding-left: 50px;
+    padding-top: 10px;*/
+    font-size: 22px;
+    line-height: 200%;
+    font-weight: 900;
+}
+
+#aboutPageText2{
+    position: absolute;
+    text-align: center;
+    left: 165px;
+    top:170px;
+    /*padding-left: 50px;
+    padding-bottom: 100px;*/
+    font-size: 22px;
+    line-height: 200%;
+    font-weight: 100;
+}
+
+#navItems li{
+    list-style-type: none;
+    padding-right: 20px;
+    float: right;
+}
+
+#soilCircleTitles{
+    text-align: left;
+    padding-left: 55px;
+    font-size: 40px;
+}
+
+#sixFsPage{
+    text-align: center;
+    font-size: 35px;
+    line-height: 120%;
+    padding-top: 55px;
+}
+
+#soilCircleText{
+    /*position: absolute;*/
+    text-align: left;
+    padding-left: 55px;
+    padding-bottom: 25px;
+    font-size: 25px;
+    line-height: 200%;
+    /*bottom: 8px;
+    left: 16px;*/
+}
+
+#foodLink{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 22px;
+}
+
+#atHomeLink{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 22px;
+    color: red;
+    text-decoration: none;
+}
+
+#ourStory p{
+    text-align: left;
+}
+
+#arrow{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: -630px;
+}
+
+.mediaArrow{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    right: -30px;
+    bottom: 230px;
+}
+
+#mediaAnchor{
+    position: relative;
+    left: 50px;
+}

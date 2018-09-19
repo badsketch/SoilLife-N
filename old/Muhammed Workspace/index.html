@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+			<link rel="stylesheet" type="text/css" href="fullpage.js/dist/jquery.fullPage.css" />
+
+			<link rel="stylesheet" type="text/css" href="tempsoil.css" />
+
+
+
+			<link rel='stylesheet' href='./Media/styles/media.css' />
+      <link rel="stylesheet" type="text/css" href="./Media/styles/jquery.fancybox.min.css">
+
+
+
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+			<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+			<script src="fullpage.js/vendors/jquery.easings.min.js"></script>
+
+
+			<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+			<script type="text/javascript" src="fullpage.js/vendors/scrolloverflow.min.js"></script>
+
+			<script type="text/javascript" src="fullpage.js/dist/jquery.fullPage.js"></script>
+
+
+			<style>
+			html {
+  			box-sizing: border-box;
+			}
+			*, *:before, *:after {
+			  box-sizing: border-box;
+			}
+
+	    /* Create two equal columns that floats next to each other */
+	    .column {
+	        float: left;
+	        padding: 10px;
+	    }
+	    .left {
+	      width: 70%;
+	      float: left;
+	      height: 300px;
+	      padding-right: 10%;
+	      text-align: left;
+	      padding-left: 7%;
+	      padding-top: 2.5%;
+	      padding-bottom: 0%;
+	      line-height: 1.7;
+	    }
+	    .right {
+	      width: 30%;
+	      padding-top: 5%;
+	    }
+	    /* Clear floats after the columns */
+	    .row:after {
+	        content: "";
+	        display: table;
+	        clear: both;
+	    }
+	    .stayconnected {
+	      background-color: #EC6A7C;
+	      width: 100%;
+	      height: 60px;
+	      text-align: left;
+	      padding-left: 3%;
+	      padding-top: .5%;
+	    }
+	    .socialmedia {
+	      padding: 20px;
+	      margin: 5px 2px;
+	      width: 3em;
+	      height: 3em;
+	    }
+
+	    p{
+	    	font-size: 2em;
+	    }
+	    .intro p{
+	    	width: 50%;
+	    	margin: 0 auto;
+	    	font-size: 1.5em;
+	    }
+	    .section{
+	    	text-align:center;
+	    }
+			</style>
+
+
+
+	</head>
+
+	<body>
+
+			<div id="fullpage">
+					<div class="section" id="splashPage">
+
+<!-- begin navigation bar -->
+						<div class="navbar">
+
+							<div class="iconDropdown">
+								<a href="index.html#splashAnchor"><img id="logo" src="../logo.jpg"></a>
+							</div>
+
+								<div class="soilsDropdown">
+									<a href="index.html#soils101Anchor" id="navItems">soils 101</a>
+									<div class="soils101Content">
+										<a href="soilGenesis.html">soilGenesis</a>
+										<a href="soilHabitat.html">soilHabitat</a>
+										<a href="soilBiology.html">soilBiology</a>
+										<a href="soilChemistry.html">soilChemistry</a>
+										<a href="soilNutrition.html">soilNutrition</a>
+										<a href="soilHealth.html">soilHealth</a>
+									</div>
+								</div>
+
+								<div class="wosDropdown">
+									<a href="#" id="navItems">web of soil</a>
+									<div class="wosContent">
+										<a href="food.html">food</a>
+										<a href="fiber.html">fiber</a>
+										<a href="filter.html">filter</a>
+										<a href="foundation.html">foundations</a>
+										<a href="farmaceuticals.html">farmaceuticals</a>
+										<a href="fun.html">fun</a>
+									</div>
+								</div>
+
+								<div class="mediaDropdown">
+									<a href="#mediaAnchor" id="navItems">media</a>
+								</div>
+
+								<div class="involvedDropdown">
+									<a href="#involvedAnchor" id="navItems">get involved</a>
+									<div class="involvedContent">
+											<a href="atHome.html">atHome</a>
+											<a href="inCommunity.html">inCommunity</a>
+											<a href="legislation.html">legislation</a>
+											<a href="socialMedia.html">socialMedia</a>
+											<a href="education.html">education</a>
+											<a href="donations.html">donations</a>
+									</div>
+								</div>
+
+								<div class="aboutDropdown">
+									<a href="#aboutAnchor" id="navItems">about us</a>
+									<div class="aboutContent">
+											<a href="ourStory.html">ourStory</a>
+											<a href="ourMission.html">ourMission</a>
+											<a href="ourVision.html">ourVision</a>
+											<a href="ourValues.html">ourValues</a>
+											<a href="ourTeam.html">ourTeam</a>
+											<a href="ourContact.html">ourContact</a>
+
+									</div>
+								</div>
+
+							<div id="socialMediaLinks">
+								<a href="https://www.facebook.com/TheSoilLife/"><img id="facebookLogo" src="facebook.svg"></a>
+								<a href="https://www.instagram.com/soil.life"><img id="instagramLogo" src="instagram.svg"></a>
+								<a href="https://twitter.com/the_Soil_Life"><img id="twitterLogo" src="twitter.svg"></a>
+							</div>
+						</div>
+<!-- end navigation bar -->
+						<div class="jumbotron">
+							<h2 class="jumboText">we all share<br>common ground.<br></h2>
+							<h3 class="jumboTear">get dirty. get connected.</h3>
+						</div>
+					</div>
+
+					<div class="section" id="soilCircle">
+
+						<div class="slide" id="soilCirclePage">
+								<a href="#splashAnchor"><img id="logo" src="../logo.svg"></a>
+								<img id="downArrow" src="down-arrow.svg">
+								<video id="soilCircleVideo" width="80%" height="80%" data-autoplay loop muted>
+									<source src="Soil Wheel Animation 2.mp4" type="video/mp4">
+								</video>
+
+							<!-- Placeholder section -->
+						</div>
+						<div class="slide" id="healthySoils"><img id="soilPicture" src="healthySoils/healthySoils.jpg"><!--<img src="../imgs/photos/wheel/wheel-soil.jpg" style="width:100%;">-->
+							<p id="soilCircleTitles">[image here]<br></p>
+							<p id="soilCircleText">
+								as gravity, wind, and water<br>
+								weathered rocks into<br>
+								smaller and smaller pieces,<br>
+								soils began to form on Earth,<br>
+								supporting greater and<br>
+								greater complexity and<br>
+								diversity of life!
+							</p>
+
+						</div>
+						<div class="slide" id="healthyPlants"><img id="soilPicture" src="healthySoils/healthyPlants.jpg">
+							<p id="soilCircleTitles">[image here]<br></p>
+							<p id="soilCircleText">
+								healthy soils are teeming with<br>
+								microbes, hard at work,<br>
+								making nutrients available to<br>
+								plants. water and air flows<br>
+								through them easily and they<br>
+								tend to be resilient in the face<br>
+								of disease and drought.
+							</p>
+						</div>
+						<div class="slide" id="healthyPeople"><img id="soilPicture" src="healthySoils/healthyPeople.jpg">
+							<p id="soilCircleTitles">[image here]<br></p>
+							<p id="soilCircleText">
+								healthy plants and animals<br>
+								provide the base for a healthy<br>
+								human diet. the food we eat<br>
+								provides the building blocks<br>
+								that make up every cell of our<br>
+								bodies. you, literally, are what<br>
+								you eat!
+							</p>
+						</div>
+						<div class="slide" id="healthyCommunities"><img id="soilPicture" src="healthySoils/healthyCommunities.jpg">
+							<p id="soilCircleTitles">[image here]<br></p>
+							<p id="soilCircleText">
+								sutainable farming can<br>
+								revitalize whole communities,<br>
+								providing jobs and secure<br>
+								access to food. gardens bring<br>
+								whole communities together,<br>
+								empowering with the tools for<br>
+								self-sufficeincy and uniting us <br>
+								on common ground!
+							</p>
+						</div>
+						<div class="slide" id="healthyEconomies"><img id="soilPicture" src="healthySoils/healthyEconomies.jpg">
+							<p id="soilCircleTitles">[image here]<br></p>
+							<p id="soilCircleText">
+								soils produce the raw<br>
+								materials that form the base<br>
+								of our global economy.<br>
+								improving soil health can<br>
+								reduce inpts and increase<br>
+								yields, which means more<br>
+								stable commodity pices, and<br>
+								more profit in the grower's<br>
+								pocket!<br>
+							</p>
+						</div>
+						<div class="slide" id="healthyPlanet"><img id="soilPicture" src="healthySoils/healthyPlanet.jpg">
+							<p id="soilCircleTitles">[image here]<br></p>
+							<p id="soilCircleText">
+								healthy soils silently deliver<br>
+								ecosystem services that<br>
+								support life as we know it.<br>
+								healthy soils filter our air<br>
+								and water; protect against<br>
+								floods, sequester carbon;<br>
+								reduce pest and disease<br>
+								pressure; and encourage<br>
+								biodiversity.
+							</p>
+						</div>
+					</div>
+
+					<div class="section" id="sixFs">
+						<a href="#splashAnchor"><img id="logo" src="../logo.svg"></a>
+						<div class="slide" id="sixFsPage">
+							<!--<p id="sixFsMain">[javascript image change]<br><br>
+								soils are fundamental to life on Earth.<br>
+								if you [javascript text change], you depend on soil.<br><br>
+								[find out how button]
+							</p>-->
+							<!--<a href="food.html" id="foodLink">Click me to go to start SixFs!</a>-->
+							<img class="sixFsIcon"  id="sixFsIcon" src='6Fs-Filter No Text.svg'>
+							<p class="text-center"  id="fundamental" style="">
+							soils are fundamental to life on Earth.
+							<br>
+							if you    <span id="changeText">Breathe Air/Eat Food/Wear Clothes</span>,    you depend on soil.
+							</p>
+							<a href="food.html"><button type="button" class="btn" id="sixFsButton">find out how!</button></a>
+						</div>
+					</div>
+
+					<div class="section" id="media">
+						<div class="slide" id="introVideo">
+								<a href="#splashAnchor"><img id="logo" src="../logo.svg"></a>
+									<video width="800" height="500" controls>
+										<source src="BBB_Rough Cut Soil Genesis (1.13).mp4?" type="video/mp4">
+									</video>
+
+									<a href="index.html#mediaAnchor/1"><img class ="mediaArrow" src="right-arrow.svg"></a>
+						</div>
+						<div class="slide" id="soilFlix">
+							<script>$.fn.fullpage.setAutoScrolling(false)</script>
+							<section id="contain"></section>
+						</div>
+
+					</div>
+
+					<div class="section" id="soils101">
+							<a href="#splashAnchor"><img id="logo" src="../logo.svg"></a>
+							<div class="slide" id="soilMattersIntro">
+								<p id="soilMattersText1">
+									<a href="soilGenesis.html"><img id ="arrow" src="arrow.png"></a>
+									want to know more?
+								</p>
+								<p id="soilMattersText2">
+									dig deeper.
+								</p>
+							</div>
+					</div>
+
+					<div class="section" id="involved">
+							<div class="slide" id="involvedPage">
+								<a href="atHome.html" id="atHomeLink">Click me to go to start getInvolved!</a>
+								<div class="transbox2">
+									<p id="involvedPageText1">soil does so much for us, find<br>
+										out what you can do for soil.<br>
+									</p>
+									<p id="involvedPageText2">there are countless ways to dig <br>
+										in and get your hands dirty!
+									</p>
+								</div>
+							</div>
+					</div>
+
+					<div class="section" id="about">
+						<div class="slide" id="aboutPage">
+							<div class="transbox"><br>
+								<p id="aboutPageText1">	we are on a mission to change the way the<br>
+								 world looks at soil-digging into what's dirty<br>
+								 and calling into question what's clean.
+								</p>
+								<p id="aboutPageText2">we believe in change from the ground up! by<br>
+									starting at the root of some of our most pressing <br>
+									global issues, we aim to promote environmental<br>
+									and human health across the globe!<br>
+								</p>
+							</div>
+						</div>
+					</div>
+						<!--<div class="slide" id="ourStory">
+							<h1>our story</h1>
+							<h3>from antibiotics to microbiology</h3>
+							<p>
+								Back in 2008, our founder, Jessica Chiartas, was living in the Washington, DC<br> area
+								working in corporate sales for a pharmaceutical company called<br> Schering-Plough
+								(which has since merged with Merck). During her brief one<br> month training, which
+								consisted of a crash course in anatomy and physiology,<br> Jessica reinvigorated her
+								sense of curiosity and interest in the sciences.  When<br> she returned home, she began
+								scouring the scientific literature to better<br> understand the products she was selling
+								and the impact they had.<br><br>
+
+								It immediately became evident, that there was a large disconnect between<br> what she read in
+								the scientific literature and what the marketing materials she<br> had been trained on seemed
+								to purport; and an even larger disconnect<br> between some of what she had been reading on health
+								and nutrition and<br> some of the conventional wisdom that she and other members of the general<br>
+								populace had long held to be true.
+							</p>
+						</div>
+						<div class="slide" id="ourStory">
+							<p>
+								As she began to grow more and more passionate about issues concerning the<br> environment, socioeconomic
+								justice, and health/nutrition, she decided that the<br> communication skills she had developed via sales
+								and marketing would be put<br> to far better use for translating scientific information than pushing pills,
+								but<br> where to start? What type of science to communicate?<br><br>
+
+								While traveling overseas on the proverbial search for herself, she stumbled<br> upon some travelers who were
+								working as laborers on farms in exchange for<br> room and board (also known as WWOOFing).  What started as a
+								clever way to<br> extend her travel budget, quickly turned into a life-changing, eye-opening<br> experience. It
+								didn’t take long after digging her hands into the soil, that she<br> recognized soil as the nexus of all the
+								major challenges she had grown so<br> passionate about.  But not only was it the root of so many global problems
+								we<br> currently face, but it also held a diversity of solutions, right beneath our feet, in<br> our own backyards,
+								parks, and community lots!
+							</p>
+						</div>
+						<div class="slide" id="ourStory">
+							<p>
+								She returned to school to do a PhD in Soils & Biogeochemistry at the University<br> of California, Davis and immediately
+								began engaging with the California state<br> Healthy Soils Initiative.  At the first meeting she attended, she witnessed the<br>
+								power of storytelling to captivate an audience (including, importantly,<br> policymakers).<br><br>
+
+								However, upon leaving, her academic advisors and peers began to comment<br> on the sensationalism of the story, the hyperbole,
+								the lack of mention of the<br> uncertainty or the nuance of something as dynamic and diverse as soil. She<br> immediately recognized
+								the importance of framing rather than spinning a story<br> and decided to start a seminar to discuss current issues in science<br>
+								communication. After several years, the seminar evolved into a PR campaign to<br> raise awareness about the value and importance
+								of soil and ultimately, has<br> culminated in the production of this website and the tools housed within it! We<br> hope you enjoy!
+							</p>
+						</div>
+						<div class="slide" id="ourStory">
+							<p>
+								<b>who we are:</b> Cross-Disciplinary group of UC Davis Graduate Students<br><br>
+
+								<b>why we love soil:</b> Because it rocks. Because it sustains life.  Because its full of<br> life. <br> <br>
+
+								<b>why we are doing this:</b> interested in raising awareness about the value and<br> importance of soil;
+								showing the connectedness between soil and our everyday<br> lives<br><br>
+
+								<b>how it got started:</b> Louise Jackson, Garett Long, Deirdre Griffin, and Jessica Chiartas<br>
+								attended a Healthy Soils Initiative event in Sacramento in January 2015<br>
+								and we were so inspired and empowered from the session that we wanted to<br>
+								get involved with spreading the word on soil and showing people all there is to<br>
+								love and appreciate about this precious non-renewable resources
+							</p>
+						</div>-->
+
+						<div class="section fp-auto-height" id="section1">
+				      <div class="column left" style="background-color:#ffffff;">
+				          <p style="color:#3CABA2;">soil life is a non-profit based out of uc davis and supported<br>
+				          by the soils and biogeochemistry graduate group.<br>
+				          <b>we are on a mission to change the way the world looks at soil.</b></p>
+				      </div>
+
+				        <div class ="column right">
+				          <div class="stayconnected">
+				            <p style="color:#ffffff; font-size: 25px;"><b>stay connected.</b></p>
+				          </div>
+
+				          <div id="socialmedia">
+				            <a href="https://www.instagram.com/soil.life"><img id="instagramLogo" src="instagram.svg"></a>
+				            <a href="https://www.facebook.com/TheSoilLife/"><img id="facebookLogo" src="facebook.svg"></a>
+				            <a href="https://twitter.com/the_Soil_Life"><img id="twitterLogo" src="twitter.svg"></a>
+				            <a href="https://www.youtube.com/TheSoilLife/"><img id="facebookLogo" src="facebook.svg"></a>
+				          </div>
+				        </div>
+				    </div>
+
+
+
+
+			</div>
+
+			<script>
+				$(document).ready(function() {
+					$('#fullpage').fullpage({
+						navigation: true,      // shows vertical navbar
+						slidesNavigation: true, // shows slide navbar
+						navigationPosition: 'left',
+						anchors: ['splashAnchor', 'soilCircleAnchor', 'sixFsAnchor', 'mediaAnchor', 'soils101Anchor', 'involvedAnchor', 'aboutAnchor']
+						/*
+						scrollOverflow: true,
+						scrollOverflowReset: true,
+						scrollOverflowOptions:
+						*/
+					});
+				});
+			</script>
+
+			<script>
+				//  changeText script
+				// Pink:    #fa647a
+				// Yellow:  #fac718
+				// Green:   #36ae99
+				// Blue:    #195ba7
+				// Brown:   #544d50
+				// Orange:  #fa6a33
+
+
+				// Nested Array [icon,text,color]
+				var changeArray =[ ["6Fs-Food No Text.svg","eat food","#ee6a7c"],
+								["6Fs-Filter No Text.svg","breathe air","#195ba7"],
+								["6Fs-Filter No Text.svg","drink water","#195ba7"],
+								["6Fs-FiberFuel No Text.svg","wear clothes","#fac718"],
+								["6Fs-Foundation No Text.svg","live in a shelter","#544d50"],
+								["6Fs-Farmaceuticals No Text.svg","use medicine","#fa6a33"],
+								["6Fs-Fun No Text.svg","enjoy the outdoors","#36ae99"]
+								];
+
+				var counter = 0;
+				var iconElem = document.getElementById("sixFsIcon");
+				var textElem = document.getElementById("changeText");
+				var buttonElem = document.getElementById("sixFsButton");
+				setInterval(change,2000);
+
+
+				function change() {
+					iconElem.src = changeArray[counter][0];
+					iconElem.style.height = "200px";
+					iconElem.style.height = "200px";
+					textElem.innerHTML = changeArray[counter][1];
+					textElem.style.color = changeArray[counter][2];
+					buttonElem.style.color = "white";
+					buttonElem.style.background = changeArray[counter][2];
+
+
+					counter++;
+					if(counter >= changeArray.length){
+						counter = 0;
+					}
+				}
+
+				change();
+			</script>
+	</body>
+
+
+	<script src='./Media/scripts/d3.v4.min.js'></script>
+	<script src='./Media/scripts/media.js'></script>
+	<script src="./Media/scripts/jquery.fancybox.min.js"></script>
+
+</html>

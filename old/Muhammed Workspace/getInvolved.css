@@ -1,0 +1,960 @@
+@font-face {
+    font-family: 'acremedium';
+    src: url("Acre-Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  font-family:acremedium;
+  letter-spacing: 1px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    height:50px;
+    position: fixed;
+    width:100%;
+    top: 0;
+    padding-top: 14px 16px; /* padding for items */
+    z-index: 3;
+}
+
+.navbar a {
+    color: #5D5152;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 16px;
+    left: 5%;
+    /*display: inline;  TAKE OUT IF NECESSARY  inline or inline-block*/
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+    text-decoration-color:#ee6a7c;
+}
+
+.navbar a:active{
+    text-decoration: underline;
+    text-decoration-color:#ee6a7c;
+}
+
+#logo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height:50px;
+    z-index: 1;
+}
+
+#navItems{
+    /*position: relative;*/
+    /*padding-left: 20%;*/
+    left: -2500px;
+    /*padding-top:0px;*/
+    padding: 30px 30px;
+    top: 100px;
+    /*padding: 15px;*/
+}
+
+#socialMediaLinks{
+    float: right;
+    color: #5D5152;
+    padding-top: .5%;
+}
+
+#facebookLogo, #instagramLogo, #twitterLogo{
+    height:30px;
+}
+
+/*soil circle, Fs, media, 101, involved, about, foot*/
+
+
+.iconDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 0%;
+    padding-top: 15px; /* padding for items */
+}
+
+
+.soilsDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 11%;
+    padding-top: 15px; /* padding for items */
+}
+
+.wosDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 25%;
+    padding-top: 15px; /* padding for items */
+}
+
+.mediaDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 42%;
+    padding-top: 15px; /* padding for items */
+}
+
+.involvedDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 57%;
+    padding-top: 15px; /* padding for items */
+}
+
+.aboutDropdown{
+    background: transparent;
+    /*height:42px;*/
+    position: absolute;
+    /*width:100%;*/
+    top: 0;
+    left: 74%;
+    padding-top: 15px; /* padding for items */
+}
+
+.soilsDropdown:hover .soils101Content {
+    display: block;
+}
+
+.involvedDropdown:hover .involvedContent {
+    display: block;
+}
+
+.aboutDropdown:hover .aboutContent {
+    display: block;
+}
+
+.wosDropdown:hover .wosContent {
+    display: block;
+    /*position: relative;
+    left: -245px;*/
+}
+
+.soils101Content, .involvedContent, .aboutContent, .wosContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.soils101Content a, .involvedContent a, .aboutContent a , .wosContent a{
+    float: none;
+    color: #5D5152;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.soils101Content a:hover, .involvedContent a:hover, .aboutContent a:hover, .wosContent a:hover {
+    background-color: #ddd;
+}
+
+.sixFsNav {
+    height:33px;
+    position: absolute; /*fixed to move with user, absolute to stay at top*/
+    width:100%;
+    top: 57px;
+    padding-top: 15px; /* padding for items */
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.sixFsNav a{
+    top:-35px;
+    color: #5B5052;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 300px;
+  background-color: #fff;
+  color: black;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 150%;
+}
+
+.atHome1 {
+    background-image: url("getInvolved/1 At Home_1 Rooftop Garden.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.atHome1:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+.atHome2 {
+    /* background-image: url("getInvolved/1 At Home_1 Vegetable Garden.jpg"); */
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+    /*opacity: 0.5;*/
+}
+
+.atHome2:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+.atHome3{
+    background-image: url("getInvolved/1 At Home_2 Compost.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.atHome3:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+.atHome4{
+    background-image: url("getInvolved/1 At Home_3 Green Bin.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.atHome4:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+.atHome5{
+    background-image: url("getInvolved/1 At Home_4 Convert Your Lawn.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.atHome5:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.atHome6{
+    background-image: url("getInvolved/1 At Home_5 Barefoot.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.atHome6:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.atHome7{
+    background-image: url("getInvolved/1 At Home_6 Leaves.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.atHome7:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.atHome8{
+    background-image: url("getInvolved/1 At Home_7 Mulch.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.atHome8:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.text {
+    font-size: 150%;
+    position: relative;
+    /*top: 100px;*/
+    text-align: center;
+    padding-top: 20%
+}
+
+.section{
+    background-size: cover;
+}
+
+u {
+    text-decoration: underline;
+}
+
+#atHome{
+    color:#ee6a7c;
+}
+
+#atHomePage{
+    background-image: url("getInvolved/atHome.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#involvedIcon{
+    position: absolute;
+    left: 38%;
+    top: 395px;
+    width: 300px;
+    height:300px;
+}
+
+#atHomeText{
+    font-size: 32px;
+    position: absolute;
+    left: 470px;
+    top: 380px;
+    text-align: left;
+    line-height: 2;
+    color: white;
+}
+
+#inCommunity{
+    color: #fac718;
+}
+
+#inCommunityPage{
+    background-image: url("getInvolved/inCommunity.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#inCommunityPic{
+    position: absolute;
+    right: 320px;
+    top: 175px;
+    width: 300px;
+    height:300px;
+}
+
+#inCommunityText{
+    font-size: 28px;
+    position: absolute;
+    left: 470px;
+    top: 0px;
+    text-align: center;
+    line-height: 2;
+
+}
+
+
+.inCommunity1 {
+    background-image: url("getInvolved/2 In Your Community_1 Farmers Market.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.inCommunity1:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+.inCommunity2 {
+    background-image: url("getInvolved/2 In Your Community_2 CSA.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.inCommunity2:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.inCommunity3 {
+    background-image: url("getInvolved/2 In Your Community_3 Community Garden.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.inCommunity3:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.inCommunity4 {
+    background-image: url("getInvolved/2 In Your Community_5 Farm to Fork.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.inCommunity4:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.inCommunity5 {
+    background-image: url("getInvolved/2 In Your Community_4 Compost Dropoff.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.inCommunity5:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.inCommunity6 {
+    background-image: url("getInvolved/2 In Your Community_6 Local Food.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.inCommunity6:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#legislation{
+    color: #36ae99;
+}
+
+#legislationPage{
+    background-image: url("getInvolved/legislation.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#legislationPic{
+    position: absolute;
+    left: 100px;
+    bottom: 405px;
+    width: 300px;
+    height:300px;
+}
+
+#legislationText{
+    font-size: 24px;
+    position: absolute;
+    left: 370px;
+    bottom: 490px;
+    text-align: left;
+    line-height: 2;
+
+}
+
+
+.legislation1{
+    background-image: url("getInvolved/3 With Your Legislators_1 Initiative.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.legislation1:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.legislation2{
+    background-image: url("getInvolved/3 With Your Legislators_2 Write to Your Legislators.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.legislation2:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.legislation3{
+    background-image: url("getInvolved/3 With Your Legislators_3 Submit Resolution.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.legislation3:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.legislation4{
+    background-image: url("getInvolved/3 With Your Legislators_4 Cap and Trade.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.legislation4:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.legislation5{
+    background-image: url("getInvolved/3 With Your Legislators_5 Resource Conservation District.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.legislation5:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+#socialMedia{
+    color: #195ba7;
+}
+
+#socialMediaPage{
+    background-image: url("getInvolved/socialMedia.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#socialMediaPic{
+    position: absolute;
+    left: 20px;
+    bottom: 405px;
+    width: 300px;
+    height:300px;
+}
+
+#socialMediaText{
+    font-size: 24px;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    text-align: left;
+    line-height: 2;
+    color: white;
+}
+
+#facebookIcon, #twitterIcon, #instagramIcon{
+    position: relative;
+    top:20px;
+    height: 250px;
+}
+
+.blankspace{
+    background-color: #195ba7;
+}
+
+#education{
+    color: #544d50;
+}
+
+#educationPage{
+    background-image: url("getInvolved/education.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#educationPic{
+    position: absolute;
+    right: 280px;
+    bottom: 490px;
+    width: 250px;
+    height:250px;
+}
+
+#educationText{
+    font-size: 24px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    text-align: left;
+    line-height: 2;
+}
+
+
+.education1{
+    background-image: url("getInvolved/4 For Your Education_1 Watch.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.education1:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.education2{
+    background-image: url("getInvolved/4 For Your Education_2 Read.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.education2:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.education3{
+    background-image: url("getInvolved/4 For Your Education_3 Watch Intro to Soils.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.education3:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.education4{
+    background-image: url("getInvolved/4 For Your Education_4 Take a Class.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.education4:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.education5{
+    background-image: url("getInvolved/4 For Your Education_5 NRCS Resources.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.education5:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.education6{
+    background-image: url("getInvolved/4 For Your Education_6 SSSA Resources.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.education6:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+#donations{
+    color: #fa6a33;
+}
+
+#donationsPage{
+    background-image: url("getInvolved/donations.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#donationsPic{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    width: 250px;
+    height:250px;
+}
+
+#donationsText{
+    font-size: 24px;
+    position: absolute;
+    left: 240px;
+    top: 200px;
+    text-align: left;
+    line-height: 2;
+}
+
+.donations1{
+    background-image: url("getInvolved/5 Through Donations_1 Adopt an Acre.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.donations1:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.donations2{
+    background-image: url("getInvolved/5 Through Donations_2 Support Future Farmers.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.donations2:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.donations3{
+    background-image: url("getInvolved/5 Through Donations_3 Community Gardening.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.donations3:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.donations4{
+    background-image: url("getInvolved/5 Through Donations_4 Fund Research.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.donations4:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.donations5{
+    background-image: url("getInvolved/5 Through Donations_Fund Our Work.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.donations5:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.donations6{
+    background-image: url("getInvolved/5 Through Donations_Sustenance Farmer.jpg");
+    /*background-image: url("getInvolved/atHome1.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 150%;
+    position: relative;
+}
+
+.donations6:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+
+
+.arrow{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    right:-550px;
+    top: 0%;
+    z-index: 1;
+}
+
+#subNavIconMain{
+    position: absolute;
+    top: 1px;
+    height:47px;
+    width:47px;
+    z-index: 1;
+}
+#subNavIcon{
+    position: absolute;
+    top: 6px;
+    height:30px;
+    width:30px;
+    z-index: 1;
+}

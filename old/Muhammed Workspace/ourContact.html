@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+			<link rel="stylesheet" type="text/css" href="fullpage.js/dist/jquery.fullPage.css" />
+
+			<link rel="stylesheet" type="text/css" href="about.css" />
+			<link rel="stylesheet" type="text/css" href="tempsoil.css"/>
+
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+			<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+			<script src="fullpage.js/vendors/jquery.easings.min.js"></script>
+
+
+			<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+			<script type="text/javascript" src="fullpage.js/vendors/scrolloverflow.min.js"></script>
+
+
+			<script type="text/javascript" src="fullpage.js/dist/jquery.fullPageSixF.js"></script>
+	</head>
+	<body>
+			<div id="fullpage">
+				<center>
+					<div class="section" id="contactMainPage">
+						<!-- begin navigation bar -->
+												<div class="navbar">
+
+													<div class="iconDropdown">
+														<a href="index.html#splashAnchor"><img id="logo" src="../logo.jpg"></a>
+													</div>
+
+														<div class="soilsDropdown">
+															<a href="index.html#soils101Anchor" id="navItems">soils 101</a>
+															<div class="soils101Content">
+																<a href="soilGenesis.html">soilGenesis</a>
+																<a href="soilHabitat.html">soilHabitat</a>
+																<a href="soilBiology.html">soilBiology</a>
+																<a href="soilChemistry.html">soilChemistry</a>
+																<a href="soilNutrition.html">soilNutrition</a>
+																<a href="soilHealth.html">soilHealth</a>
+															</div>
+														</div>
+
+														<div class="wosDropdown">
+															<a href="#" id="navItems">web of soil</a>
+															<div class="wosContent">
+																<a href="food.html">food</a>
+																<a href="fiber.html">fiber</a>
+																<a href="filter.html">filter</a>
+																<a href="foundation.html">foundations</a>
+																<a href="farmaceuticals.html">farmaceuticals</a>
+																<a href="fun.html">fun</a>
+															</div>
+														</div>
+
+														<div class="mediaDropdown">
+															<a href="#mediaAnchor" id="navItems">media</a>
+														</div>
+
+														<div class="involvedDropdown">
+															<a href="#involvedAnchor" id="navItems">get involved</a>
+															<div class="involvedContent">
+																	<a href="atHome.html">atHome</a>
+																	<a href="inCommunity.html">inCommunity</a>
+																	<a href="legislation.html">legislation</a>
+																	<a href="socialMedia.html">socialMedia</a>
+																	<a href="education.html">education</a>
+																	<a href="donations.html">donations</a>
+															</div>
+														</div>
+
+														<div class="aboutDropdown">
+															<a href="#aboutAnchor" id="navItems">about us</a>
+															<div class="aboutContent">
+																	<a href="ourStory.html">ourStory</a>
+																	<a href="ourMission.html">ourMission</a>
+																	<a href="ourVision.html">ourVision</a>
+																	<a href="ourValues.html">ourValues</a>
+																	<a href="ourTeam.html">ourTeam</a>
+																	<a href="ourContact.html">ourContact</a>
+
+															</div>
+														</div>
+
+													<div id="socialMediaLinks">
+														<a href="https://www.facebook.com/TheSoilLife/"><img id="facebookLogo" src="facebook.svg"></a>
+														<a href="https://www.instagram.com/soil.life"><img id="instagramLogo" src="instagram.svg"></a>
+														<a href="https://twitter.com/the_Soil_Life"><img id="twitterLogo" src="twitter.svg"></a>
+													</div>
+												</div>
+						<!-- end navigation bar -->
+						<div class="sixFsNav" style="background: #36ae99">
+                                <a href="ourstory.html"><img src="subnav/AboutUs/Asset 54aboutus_story_allgray.svg" id="subNavIcon"></a>
+                                <a href="ourmission.html"><img src="subnav/AboutUs/Asset 52aboutus_mission_white.svg" id="subNavIcon"></a>
+                                <a href="ourvision.html"><img src="subnav/AboutUs/Asset 51aboutus_vision_white.svg" id="subNavIcon"></a>
+                                <a href="ourvalues.html"><img src="subnav/AboutUs/Asset 50aboutus_values_white.svg" id="subNavIcon"></a>
+                                <a href="ourteam.html"><img src="subnav/AboutUs/Asset 49aboutus_ourteam_white.svg" id="subNavIcon"></a>
+                                <a href="ourcontact.html"><img src="subnav/AboutUs/Asset 60aboutus_contactus_gray.svg" id="subNavIconMain"></a>
+                        </div>
+                        <a href="ourStory.html"><img class ="arrow" src="right-arrow.svg"></a>
+                        <p id="ourContactTitle" style="font-family:acrebold;">contact us</p>
+                        <form id="contactInfo">
+                                <b style="font-family:acrebold;">name</b><br> <input type="text" size="70" style="background-color: #D3D3D3;" ><br>
+                                <b style="font-family:acrebold;">email</b><br> <input type="text" size="70" style="background-color: #D3D3D3;"><br>
+                                <b style="font-family:acrebold;">message</b><br> <input type="text" size="70" style="background-color: #D3D3D3;height:100px" >
+                        </form>
+                        <button class="button">submit</button>
+
+
+                        <img id="contactPic" src="about/contact.svg">
+
+					</div>
+
+				</center>
+			</div>
+
+			<script>
+                    $(document).ready(function() {
+                        $('#fullpage').fullpage({
+                            scrollOverflow:true,
+                            scrollBar: true,
+                            scrollOverflowReset: true,
+                        });
+                    });
+                </script>
+	</body>
+</html>
