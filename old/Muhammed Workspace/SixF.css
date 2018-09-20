@@ -8,7 +8,7 @@
 * {
   font-family:acremedium;
   letter-spacing: 1px;
-  
+
 }
 
 .section{
@@ -27,7 +27,7 @@
     position: absolute; /*fixed to move with user, absolute to stay at top*/
     width:100%;
     top: 57px;
-    padding-top: 15px; /* padding for items */ 
+    padding-top: 15px; /* padding for items */
     display: flex;
     justify-content: space-around;
     z-index: 1;
@@ -120,17 +120,18 @@
     position: absolute;
     left: 350px;
     top: 200px;
-    width: 250px;
-    height:250px;
+    width: 350px;
+    height:350px;
 }
 
 #foodText{
     font-size: 32px;
     position: absolute;
-    left: 560px;
-    top: 230px;
-    text-align: left;
-    color: #5B5052;
+    right: 150px;
+    top: 130px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.7;
 }
 
 #foundationPage{
