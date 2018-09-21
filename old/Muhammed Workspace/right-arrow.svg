@@ -1,6 +1,15 @@
-<?xml version='1.0' encoding='utf-8'?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
-  <g>
-    <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+<svg width="129" height="129" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path id="svg_2" d="m40.4,121.3c-0.8,0.8 -1.8,1.2 -2.9,1.2s-2.1,-0.4 -2.9,-1.2c-1.6,-1.6 -1.6,-4.2 0,-5.8l51,-51l-51,-51c-1.6,-1.6 -1.6,-4.2 0,-5.8c1.6,-1.6 4.2,-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
   </g>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="64.441659" x2="91.455614" y1="9.843664" x1="36.743158" stroke-width="1.5" stroke="#ffffff" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_8" y2="63.754891" x2="91.226691" y1="118.581809" x1="37.315464" stroke-width="1.5" stroke="#ffffff" fill="none"/>
+ </g>
 </svg>
