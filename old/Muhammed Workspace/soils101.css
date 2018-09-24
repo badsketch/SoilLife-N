@@ -34,7 +34,7 @@
     position: absolute; /*fixed to move with user, absolute to stay at top*/
     width:100%;
     top: 57px;
-    padding-top: 15px; /* padding for items */ 
+    padding-top: 15px; /* padding for items */
     display: flex;
     justify-content: space-around;
     z-index: 1;
@@ -52,7 +52,7 @@
     position: absolute; /*fixed to move with user, absolute to stay at top*/
     width:100%;
     top: 0px;
-    padding-top: 15px; /* padding for items */ 
+    padding-top: 15px; /* padding for items */
     display: flex;
     justify-content: space-around;
     z-index: 1;
@@ -89,7 +89,7 @@ ul {
     width: 100px;
     position: absolute;
     /*background: red;*/
-} 
+}
 
 li a {
     display: block;
@@ -155,7 +155,7 @@ li a {
     position: relative;
     height: 80px;
     width: 80px;
-    right:-580px;
+    right:-830px;
     top: 0%;
     z-index: 1;
 }
@@ -164,7 +164,7 @@ li a {
     position: relative;
     height: 80px;
     width: 80px;
-    left:-580px;
+    left:-830px;
     top: 0%;
     z-index: 1;
 }
