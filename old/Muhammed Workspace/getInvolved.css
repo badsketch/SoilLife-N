@@ -13,11 +13,10 @@
 /* NAVBAR */
 .navbar {
     background: white;
-    height:50px;
+    height:57px;
     position: fixed;
     width:100%;
     top: 0;
-    padding-top: 14px 16px; /* padding for items */
     z-index: 3;
 }
 
@@ -934,13 +933,20 @@ u {
   opacity: .9;
 }
 
-
-.arrow{
-    position: relative;
+.left-arrow{
+    position: absolute;
     height: 80px;
     width: 80px;
-    right:-550px;
-    top: 0%;
+    left: 2%;
+    top: 50%;
+    z-index: 1;
+}
+.right-arrow{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: 0%;
+    top: 50%;
     z-index: 1;
 }
 
