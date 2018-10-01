@@ -570,3 +570,9 @@ html, body{
     position: relative;
     left: 50px;
 }
+
+.rightArrow {
+    position: absolute;
+    left: 88%;
+    top: 38%;
+}
