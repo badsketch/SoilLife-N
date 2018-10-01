@@ -75,9 +75,6 @@
 }
 
 #ourStoryText2{
-    position: relative;
-    left: 50px;
-    top: 10px;
     font: 8px;
     color: #5B5052;
 }
@@ -191,7 +188,6 @@
     width: 500px;
     top: 405px;
     left: -300px;
-    z-index: 1;
 }
 
 #teamText{
@@ -204,12 +200,9 @@
 }
 
 #teamText2{
-    position: relative;
-    top: 5px;
-    left: 10px;
     font-size: 13px;
-    text-align: left;
     color: #5B5052; 
+    line-height: 1.5;
 }
 
 
@@ -246,7 +239,6 @@
 }
 
 #ourValuesText2{
-    position: relative;
     left: 50px;
     top: 10px;
     font: 8px;
