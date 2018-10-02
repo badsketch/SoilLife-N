@@ -1,4 +1,4 @@
-d3.csv('/MediaHub3.csv', function(error, data) {
+d3.csv('/Media/MediaHub3.csv', function(error, data) {
     if (error) throw error;
 
     var a = [];

@@ -1,4 +1,6 @@
 #contain {
+  position: relative;
+  top: 10%;
   width: 100%;
   margin: 6em;
   min-height: 100vh;
