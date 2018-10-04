@@ -2,6 +2,8 @@
 
 <html>
 	<head>
+			<meta charset="utf-8">
+			<title>Farmaceuticals</title>
 			<link rel="stylesheet" type="text/css" href="fullpage.js/dist/jquery.fullPage.css" />
 
 			<link rel="stylesheet" type="text/css" href="SixF.css" />
@@ -134,6 +136,19 @@
 								<a href="farmaceuticals.html#farmaceuticalsWeb"><img src="subnav/6Fs/farmaceuticals_gray.svg" id="subNavIconMain"></a>
 								<a href="fun.html#funWeb"><img src="subnav/6Fs/fun_white.svg" id="subNavIcon"></a>
 						</div>
+						<div id="name">
+								Farmaceuticals
+							</div>
+							<svg id="web"></svg>
+							<div id="modal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+									<div class="modalTable">
+										<div id="modal_row" style="display: table-row">
+										</div>
+									</div>
+								</div>
+							</div>
 					</div>
 
 					<div class="section">
@@ -164,9 +179,10 @@
 					});
 				});
 			</script>
+			<script src='./Media/scripts/d3.v4.min.js'></script>
+			<script src='wos.js'></script>
 	</body>
 
-	<script src='./Media/scripts/d3.v4.min.js'></script>
 	<script src='./Media/scripts/farmaceuticals.js'></script>
 	<script src="./Media/scripts/jquery.fancybox.min.js"></script>
 </html>
